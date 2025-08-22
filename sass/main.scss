@@ -1,0 +1,41 @@
+// custom styles
+$primary: #355fe8;
+$dark: #000000;
+$secondary: #cccccc;
+$muted: #b5b5b5;
+$white: #ffffff;
+$progress-height: 10px;
+
+body {
+  background-image: url();
+}
+
+.nav {
+  a {
+    color: #b5b5b5;
+
+    &:hover {
+      color: $white;
+      border-bottom: $primary;
+    }
+  }
+}
+
+a i {
+  color: $white;
+}
+
+// .nav-underline {
+//   .nav-link {
+//     &:active {
+//       border-bottom-color: green;
+
+//     &:hover {
+//       border-bottom-color: blue; // optional hover underline color
+//     }
+//   }
+//   }
+// }
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
