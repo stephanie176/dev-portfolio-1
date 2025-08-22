@@ -4,6 +4,7 @@ $dark: #000000;
 $secondary: #cccccc;
 $muted: #b5b5b5;
 $white: #ffffff;
+$success: #14ba62;
 $progress-height: 10px;
 
 body {
@@ -23,6 +24,24 @@ body {
 
 a i {
   color: $white;
+}
+
+.portfolio-hover {
+  display: none;
+  animation: zoomOut .45s ease-in-out forwards;
+}
+
+.portfolio-item:hover .portfolio-hover {
+  display: block;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // .nav-underline {
