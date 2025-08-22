@@ -7,10 +7,6 @@ $white: #ffffff;
 $success: #14ba62;
 $progress-height: 10px;
 
-body {
-  background-image: url();
-}
-
 .nav {
   a {
     color: #b5b5b5;
@@ -25,6 +21,41 @@ body {
 a i {
   color: $white;
 }
+
+.blue-line {
+  display: inline-flex;
+  align-items: center;
+}
+
+.blue-line {
+  letter-spacing: 2px;
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+.blue-line::after {
+  content: '';
+  height: 1px;
+  width: 120px;
+  background: $primary;
+  margin-left: 10px;
+}
+
+.blue-dot {
+  display: inline-flex;
+  align-items: center;
+}
+
+.blue-dot::before {
+  content: '';
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: $primary;
+  margin-right: 15px;
+  z-index: 1;
+}
+
 
 .portfolio-hover {
   display: none;
